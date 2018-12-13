@@ -11,7 +11,8 @@ git:
   default_branch: master
   hooks:
     commit-msg: false
-  remotes: {  }
+  remotes:
+    cloud: 'mujitokyo@svn-30582.prod.hosting.acquia.com:mujitokyo.git'
 deploy:
   tag_source: true
 drush:
