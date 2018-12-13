@@ -12,7 +12,7 @@ git:
   hooks:
     commit-msg: false
   remotes:
-    cloud: 'mujitokyo@svn-30582.prod.hosting.acquia.com:mujitokyo.git'
+    cloud: 'test'
 deploy:
   tag_source: true
 drush:
