@@ -1,0 +1,22 @@
+uuid: 6e007bce-d464-42a7-b313-29abf48ec68f
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.upload_file_contents
+id: node.upload_file_contents.promote
+field_name: promote
+entity_type: node
+bundle: upload_file_contents
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

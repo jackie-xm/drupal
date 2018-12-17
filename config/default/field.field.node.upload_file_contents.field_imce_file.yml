@@ -1,0 +1,27 @@
+uuid: 6725e41d-f0ad-42fe-ab06-9a1fb87a81de
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imce_file
+    - node.type.upload_file_contents
+  module:
+    - file
+id: node.upload_file_contents.field_imce_file
+field_name: field_imce_file
+entity_type: node
+bundle: upload_file_contents
+label: IMCEファイルアップロード
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

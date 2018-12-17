@@ -1,0 +1,22 @@
+uuid: 098add31-862b-445c-b63c-2f46e9842336
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.upload_file_contents
+  module:
+    - text
+id: node.upload_file_contents.body
+field_name: body
+entity_type: node
+bundle: upload_file_contents
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

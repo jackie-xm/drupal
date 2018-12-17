@@ -1,0 +1,18 @@
+uuid: 93b1d144-e176-41fe-bc62-1781781348d6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.created
+field_name: created
+entity_type: comment
+bundle: comment
+label: Created
+description: コメントが作成された時間。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,29 @@
+uuid: a7c9020b-9be3-4b49-97c9-541c123271b3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_katekori
+    - media.type.image
+    - taxonomy.vocabulary.tags
+id: media.image.field_katekori
+field_name: field_katekori
+entity_type: media
+bundle: image
+label: カテゴリ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

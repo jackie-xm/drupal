@@ -1,0 +1,18 @@
+uuid: f42bf0a2-5bb9-494d-9c72-0f87c4d510cb
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.file
+id: media.file.moderation_state
+field_name: moderation_state
+entity_type: media
+bundle: file
+label: 'Moderation state'
+description: コンテンツのモデレーションの状態です。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

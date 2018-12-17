@@ -251,7 +251,11 @@ $databases = [];
  *   );
  * @endcode
  */
-$config_directories = [];
+//$config_directories = [];
+//$config_directories['sync'] = 'sites/default/syn';
+ $config_directories = array(
+    CONFIG_SYNC_DIRECTORY => 'sites/default/syn',
+ );
 
 /**
  * Settings:

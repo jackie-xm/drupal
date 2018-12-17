@@ -1,0 +1,21 @@
+uuid: fd0e9957-8500-42fc-ba3d-86116100ae0d
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_upload
+    - node.type.upload_file_contents
+id: node.upload_file_contents.field_media_upload
+field_name: field_media_upload
+entity_type: node
+bundle: upload_file_contents
+label: Mediaファイルアップロード
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

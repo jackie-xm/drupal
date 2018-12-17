@@ -1,0 +1,3 @@
+administer site configuration:
+  title: 'Administer site configuration'
+  restrict access: true

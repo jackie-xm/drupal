@@ -1,0 +1,37 @@
+uuid: 2bc3186e-f3c1-4368-ac5e-75947b94be19
+langcode: ja
+status: true
+dependencies:
+  module:
+    - dropzonejs_eb_widget
+name: file_entity_media_browser
+label: 'File entity media browser'
+display: modal
+display_configuration:
+  width: '100'
+  height: '400'
+  link_text: 'Select entities'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  8f047caa-6f56-469c-8dec-e40513d9ec1f:
+    settings:
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 16M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: 8f047caa-6f56-469c-8dec-e40513d9ec1f
+    weight: 2
+    label: ファイルアップロード
+    id: dropzonejs

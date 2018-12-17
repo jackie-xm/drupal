@@ -1,0 +1,12 @@
+uuid: de2f1207-ab28-45e6-88fc-54e6c328d770
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: 登録
+targetEntityType: user
+cache: true

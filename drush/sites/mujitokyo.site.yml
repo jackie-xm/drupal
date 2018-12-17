@@ -1,0 +1,64 @@
+# Application 'mujitokyo', environment 'dev'.
+dev:
+  root: /var/www/html/mujitokyo.dev/docroot
+  ac-site: mujitokyo
+  ac-env: dev
+  ac-realm: prod
+  uri: mujitokyodev.prod.acquia-sites.com
+  dev.livedev:
+    parent: '@mujitokyo.dev'
+    root: /mnt/gfs/mujitokyo.dev/livedev/docroot
+  host: mujitokyodev.ssh.prod.acquia-sites.com
+  user: mujitokyo.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'mujitokyo', environment 'prod'.
+prod:
+  root: /var/www/html/mujitokyo.prod/docroot
+  ac-site: mujitokyo
+  ac-env: prod
+  ac-realm: prod
+  uri: mujitokyo.prod.acquia-sites.com
+  prod.livedev:
+    parent: '@mujitokyo.prod'
+    root: /mnt/gfs/mujitokyo.prod/livedev/docroot
+  host: mujitokyo.ssh.prod.acquia-sites.com
+  user: mujitokyo.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'mujitokyo', environment 'ra'.
+ra:
+  root: /var/www/html/mujitokyo.ra/docroot
+  ac-site: mujitokyo
+  ac-env: ra
+  ac-realm: prod
+  uri: mujitokyora.prod.acquia-sites.com
+  ra.livedev:
+    parent: '@mujitokyo.ra'
+    root: /mnt/gfs/mujitokyo.ra/livedev/docroot
+  host: mujitokyora.ssh.prod.acquia-sites.com
+  user: mujitokyo.ra
+  paths:
+    drush-script: drush9
+
+
+# Application 'mujitokyo', environment 'test'.
+test:
+  root: /var/www/html/mujitokyo.test/docroot
+  ac-site: mujitokyo
+  ac-env: test
+  ac-realm: prod
+  uri: mujitokyostg.prod.acquia-sites.com
+  test.livedev:
+    parent: '@mujitokyo.test'
+    root: /mnt/gfs/mujitokyo.test/livedev/docroot
+  host: mujitokyostg.ssh.prod.acquia-sites.com
+  user: mujitokyo.test
+  paths:
+    drush-script: drush9
+
+

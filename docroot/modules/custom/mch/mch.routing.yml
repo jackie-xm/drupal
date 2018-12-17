@@ -1,0 +1,15 @@
+mch:
+  path: '/mch/view'
+  defaults:
+    _controller: 'Drupal\mch\Controller\MchController::view'
+  requirements:
+    _permission: 'access content'
+
+mch.form:
+  #path: '/mch/form'
+  path: '/admin/config/development/mch'
+  defaults:
+    _title: 'Mch Search Form'
+    _form: '\Drupal\mch\Form\SearchForm'
+  requirements:
+    _permission: 'administer site configuration'

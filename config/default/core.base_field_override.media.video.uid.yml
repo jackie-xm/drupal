@@ -1,0 +1,20 @@
+uuid: 7841d5be-45fd-431c-9b5e-a227dab9fd89
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.video
+id: media.video.uid
+field_name: uid
+entity_type: media
+bundle: video
+label: 投稿者
+description: 作成者のユーザーID。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,135 @@
+uuid: 7ef93c88-316a-4534-a08d-bf45649311e3
+langcode: ja
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser
+    - entity_browser.browser.test_files_ajax
+    - field.field.node.upload_file_contents.body
+    - field.field.node.upload_file_contents.field_entity_browser_file_upload
+    - field.field.node.upload_file_contents.field_imce_file
+    - field.field.node.upload_file_contents.field_media_upload
+    - node.type.upload_file_contents
+  module:
+    - content_moderation
+    - entity_browser
+    - file
+    - imce
+    - path
+    - text
+id: node.upload_file_contents.default
+targetEntityType: node
+bundle: upload_file_contents
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_entity_browser_file_upload:
+    weight: 12
+    settings:
+      entity_browser: test_files_ajax
+      field_widget_remove: true
+      field_widget_replace: true
+      open: true
+      selection_mode: selection_append
+      field_widget_edit: true
+      view_mode: default
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_imce_file:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+    type: file_generic
+    region: content
+  field_media_upload:
+    type: entity_browser_entity_reference
+    weight: 11
+    settings:
+      entity_browser: media_entity_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+      field_widget_replace: false
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 7
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

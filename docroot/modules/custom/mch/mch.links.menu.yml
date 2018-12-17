@@ -1,0 +1,6 @@
+mch.admin:
+  title: 'Mch module search'
+  description: 'A basic module for Mch'
+  parent: system.admin_config_development
+  route_name: mch.form
+  weight: 100

@@ -1,0 +1,20 @@
+uuid: 64d029e3-df55-4206-96ae-88e7296efe7b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.audio
+  module:
+    - path
+id: media.audio.path
+field_name: path
+entity_type: media
+bundle: audio
+label: URLエイリアス
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

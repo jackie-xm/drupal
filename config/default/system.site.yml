@@ -1,0 +1,14 @@
+uuid: 5537f277-8d87-40e7-bc81-103b2b9d9bc6
+name: muji-demo
+mail: nobuaki@dgcircus.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ja
+default_langcode: ja
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,10 @@
+uuid: 975c4e5c-aa1f-42a8-96dd-a0d6577fe068
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
+id: long
+label: デフォルトの長い日付
+locked: false
+pattern: 'Y年n月j日(l) - H:i'

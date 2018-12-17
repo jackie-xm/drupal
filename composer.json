@@ -5,7 +5,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "acquia/blt": "^9.2.0"
+        "acquia/blt": "^9.2.0",
+        "drupal/admin_toolbar": "^1.25",
+        "drupal/imce": "^1.7",
+        "drupal/media_entity_browser": "^1.0@beta",
+        "drupal/webform": "^5.0@RC"
     },
     "require-dev": {
         "geerlingguy/drupal-vm": "^4.8"

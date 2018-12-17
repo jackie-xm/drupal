@@ -1,0 +1,58 @@
+uuid: cc411bef-fa19-4765-9526-fb5d90d850d0
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.upload_file_contents.body
+    - field.field.node.upload_file_contents.field_entity_browser_file_upload
+    - field.field.node.upload_file_contents.field_imce_file
+    - field.field.node.upload_file_contents.field_media_upload
+    - node.type.upload_file_contents
+  module:
+    - file
+    - text
+    - user
+id: node.upload_file_contents.default
+targetEntityType: node
+bundle: upload_file_contents
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_entity_browser_file_upload:
+    weight: 104
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_imce_file:
+    weight: 102
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_media_upload:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

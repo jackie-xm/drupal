@@ -1,0 +1,18 @@
+uuid: 2e4f9b30-e1ad-4648-916b-53dcd75f2d90
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.created
+field_name: created
+entity_type: media
+bundle: image
+label: 投稿日時
+description: 'The time the media item was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

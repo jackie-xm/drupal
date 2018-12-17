@@ -1,0 +1,18 @@
+uuid: e9f41197-24cc-429b-b3a7-200acaadaff2
+langcode: ja
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: 変更済
+description: カスタムブロックが最後に編集された時間。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

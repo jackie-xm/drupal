@@ -1,0 +1,28 @@
+uuid: 0886a50f-ff1d-4fee-bde7-093aad4a2376
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_entity_media_browser
+    - media.type.image
+    - node.type.article
+id: node.article.field_image_entity_media_browser
+field_name: field_image_entity_media_browser
+entity_type: node
+bundle: article
+label: 'Image entity media browser'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

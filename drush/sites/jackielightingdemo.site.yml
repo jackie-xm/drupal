@@ -1,0 +1,32 @@
+# Application 'jackielightingdemo', environment 'dev'.
+dev:
+  root: /var/www/html/jackielightingdemo.dev/docroot
+  ac-site: jackielightingdemo
+  ac-env: dev
+  ac-realm: devcloud
+  uri: jackielightingdemoylcbpxhej8.devcloud.acquia-sites.com
+  dev.livedev:
+    parent: '@jackielightingdemo.dev'
+    root: /mnt/gfs/jackielightingdemo.dev/livedev/docroot
+  host: jackielightingdemoylcbpxhej8.ssh.devcloud.acquia-sites.com
+  user: jackielightingdemo.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'jackielightingdemo', environment 'test'.
+test:
+  root: /var/www/html/jackielightingdemo.test/docroot
+  ac-site: jackielightingdemo
+  ac-env: test
+  ac-realm: devcloud
+  uri: jackielightingdemo3ngman5mcu.devcloud.acquia-sites.com
+  test.livedev:
+    parent: '@jackielightingdemo.test'
+    root: /mnt/gfs/jackielightingdemo.test/livedev/docroot
+  host: jackielightingdemo3ngman5mcu.ssh.devcloud.acquia-sites.com
+  user: jackielightingdemo.test
+  paths:
+    drush-script: drush9
+
+

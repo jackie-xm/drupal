@@ -1,0 +1,20 @@
+uuid: b43e71bd-659a-4fef-a860-1438b490d533
+langcode: ja
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+id: comment.comment.name
+field_name: name
+entity_type: comment
+bundle: comment
+label: Name
+description: コメント投稿者の名前。
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

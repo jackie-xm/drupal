@@ -1,0 +1,27 @@
+uuid: 563edd39-3508-43da-ac21-92849c5edbe9
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_entity_browser_file_upload
+    - node.type.upload_file_contents
+  module:
+    - file
+id: node.upload_file_contents.field_entity_browser_file_upload
+field_name: field_entity_browser_file_upload
+entity_type: node
+bundle: upload_file_contents
+label: 'Entity browserファイルアップロード'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

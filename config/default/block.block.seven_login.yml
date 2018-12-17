@@ -1,0 +1,22 @@
+uuid: 5e330d75-d7e1-4c6d-9bd8-c61d980ddb22
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - seven
+_core:
+  default_config_hash: IItlF4SKHgxduIysVQdvirDJ_v3HGuAviOkidAOJYRE
+id: seven_login
+theme: seven
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ユーザーログイン
+  provider: user
+  label_display: visible
+visibility: {  }

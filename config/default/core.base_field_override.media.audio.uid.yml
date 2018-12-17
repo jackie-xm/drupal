@@ -1,0 +1,20 @@
+uuid: 601eb60b-f8ef-4ee4-8540-7840d12366e1
+langcode: ja
+status: true
+dependencies:
+  config:
+    - media.type.audio
+id: media.audio.uid
+field_name: uid
+entity_type: media
+bundle: audio
+label: 投稿者
+description: 作成者のユーザーID。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 9568f98e-af6d-4d21-affe-046067e85098
+langcode: ja
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.status
+field_name: status
+entity_type: block_content
+bundle: basic
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean
