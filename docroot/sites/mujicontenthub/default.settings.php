@@ -251,11 +251,7 @@ $databases = [];
  *   );
  * @endcode
  */
-//$config_directories = [];
-//$config_directories['sync'] = 'sites/default/syn';
- $config_directories = array(
-    CONFIG_SYNC_DIRECTORY => 'sites/default/syn',
- );
+$config_directories = [];
 
 /**
  * Settings:
@@ -772,8 +768,3 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-//if (file_exists('/var/www/site-php')) {
-  //require '/var/www/site-php/mujitokyo/drupalmultisite-settings.inc';
-//}
-
-require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";

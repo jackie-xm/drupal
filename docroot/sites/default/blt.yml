@@ -1,0 +1,9 @@
+project:
+  local:
+    hostname: local.muji.com
+    protocol: http
+  machine_name: muji
+drush:
+  aliases:
+    local: self
+    remote: muji.test

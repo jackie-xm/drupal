@@ -1,12 +1,9 @@
 project:
-  machine_name: muji
   prefix: BLT
   human_name: 'MU JI'
   profile:
     name: lightning
-  local:
-    protocol: http
-    hostname: 'local.${project.machine_name}.com'
+  local: {  }
 git:
   default_branch: master
   hooks:
@@ -17,8 +14,6 @@ deploy:
   tag_source: true
 drush:
   aliases:
-    remote: '${project.machine_name}.test'
-    local: self
     ci: self
   default_alias: '${drush.aliases.local}'
 modules:

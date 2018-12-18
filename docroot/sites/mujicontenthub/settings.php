@@ -775,5 +775,7 @@ $settings['entity_update_batch_size'] = 50;
 //if (file_exists('/var/www/site-php')) {
   //require '/var/www/site-php/mujitokyo/drupalmultisite-settings.inc';
 //}
-
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/mujitokyo/drupalmultisite-settings.inc';
+}
 require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
