@@ -1,7 +1,28 @@
 mch:
-  path: '/mch/view'
+  path: '/mch/items'
   defaults:
-    _controller: 'Drupal\mch\Controller\MchController::view'
+    _controller: 'Drupal\mch\Controller\MchController::items'
+  requirements:
+    _permission: 'access content'
+
+mch.item:
+  path: '/mch/item'
+  defaults:
+    _controller: 'Drupal\mch\Controller\MchController::item'
+  requirements:
+    _permission: 'access content'
+
+mch.category.listing:
+  path: '/mch/catlisting'
+  defaults:
+    _controller: 'Drupal\mch\Controller\MchController::catlisting'
+  requirements:
+    _permission: 'access content'
+
+mch.category:
+  path: '/mch/category'
+  defaults:
+    _controller: 'Drupal\mch\Controller\MchController::category'
   requirements:
     _permission: 'access content'
 
