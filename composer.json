@@ -6,9 +6,20 @@
     "prefer-stable": true,
     "require": {
         "acquia/blt": "^9.2.0",
+        "drupal/acquia_contenthub": "^2.0",
         "drupal/admin_toolbar": "^1.25",
+        "drupal/content_moderation_notifications": "^3.0",
+        "drupal/devel": "^1.2",
+        "drupal/ds": "^3.2",
+        "drupal/externalauth": "^1.1",
+        "drupal/group": "^1.0",
         "drupal/imce": "^1.7",
-        "drupal/media_entity_browser": "^1.0@beta",
+        "drupal/media_entity_browser": "^2.0",
+        "drupal/node_view_permissions": "^1.2",
+        "drupal/oauth2_client": "^1.0",
+        "drupal/paragraphs": "^1.5",
+        "drupal/restui": "^1.16",
+        "drupal/simplesamlphp_auth": "^3.0",
         "drupal/webform": "^5.0@RC"
     },
     "require-dev": {

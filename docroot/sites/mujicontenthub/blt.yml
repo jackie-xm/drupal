@@ -1,0 +1,10 @@
+project:
+  local:
+    hostname: local.mujicontenthub.com
+    protocol: http
+  machine_name: mujicontenthub
+  human_name: mujicontenthub
+drush:
+  aliases:
+    local: mujicontenthub.local
+    remote: mujicontenthub.local
